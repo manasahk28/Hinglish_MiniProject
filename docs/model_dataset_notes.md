@@ -37,3 +37,4 @@ This project leverages state-of-the-art open Indic NLP foundations developed by 
   - An **embedded Aksharantar & Phonetic Rule Pipeline** runs on CPU in <10ms.
   - A **deterministic linguistic grammar engine** powers tone transformation (Formal, Casual, Polite, Professional).
   - Neural checkpoints can be plugged in by setting environment variables (`LLM_PROVIDER=openai` or downloading local HuggingFace weights).
+

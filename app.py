@@ -242,3 +242,4 @@ else:
     - **Problem**: Code-mixed Hindi assigns grammatical genders inconsistently to English nouns (e.g. *"मेरा मीटिंग"* vs *"मेरी बैठक"*).
     - **Mitigation**: GenAI phrasing module trained with few-shot in-context examples to enforce gender-agreement consistency in Formal mode.
     """)
+

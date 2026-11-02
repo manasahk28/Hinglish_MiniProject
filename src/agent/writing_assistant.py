@@ -86,3 +86,4 @@ class HinglishWritingAssistant:
         for s in styles:
             results[s] = self.process(text, style=s)
         return results
+

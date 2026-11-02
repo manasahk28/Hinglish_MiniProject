@@ -70,3 +70,4 @@ This document provides a systematic failure analysis for the **Hinglish Smart Wr
 1. **Hybrid Neural-Rule Pipeline**: Relying purely on neural sequence-to-sequence transliteration without code-switch token boundary awareness leads to corrupted technical jargon. A hybrid tokenizer + lexicon lookup outperforms end-to-end models on text messages.
 2. **Context Window Expansion**: Disambiguating homographs like *kaha* requires sentence-level syntactic parsing rather than isolated token transliteration.
 3. **Domain-Specific Fine-Tuning**: Fine-tuning BharatGen / IndicTrans2 on conversational Hinglish chat corpora (e.g., LinCE, Hinglish-TOP) substantially reduces translation distortion.
+

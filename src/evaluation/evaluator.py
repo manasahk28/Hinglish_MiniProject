@@ -120,3 +120,4 @@ if __name__ == "__main__":
     print(json.dumps(summary["overall_summary"], indent=2))
     print("\n================ CATEGORY BREAKDOWN ================")
     print(json.dumps(summary["category_summary"], indent=2))
+
