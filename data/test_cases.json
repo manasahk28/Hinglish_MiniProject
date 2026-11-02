@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "category": "Daily Conversational",
+    "hinglish_input": "bhai kaisa hai tu, bohot din se baat nahi hui",
+    "reference_devanagari": "भाई कैसा है तू, बहुत दिन से बात नहीं हुई",
+    "reference_improved_formal": "भाई, आप कैसे हैं? काफी दिनों से आपसे बात नहीं हुई।",
+    "reference_improved_casual": "भाई कैसा है तू? बहुत दिनों से बात नहीं हुई यार।",
+    "reference_english_translation": "Brother, how are you? We haven't spoken in a long time.",
+    "notes": "Informal greeting with SMS-style spelling 'bohot' -> 'बहुत'."
+  },
+  {
+    "id": 2,
+    "category": "Daily Conversational",
+    "hinglish_input": "kal sham ko chai pe milte hai",
+    "reference_devanagari": "कल शाम को चाय पे मिलते हैं",
+    "reference_improved_formal": "कल शाम को चाय पर मिलते हैं।",
+    "reference_improved_casual": "कल शाम को चाय पर मिलेंगे।",
+    "reference_english_translation": "Let's meet for tea tomorrow evening.",
+    "notes": "Colloquial 'pe' -> standard 'पर'."
+  },
+  {
+    "id": 3,
+    "category": "Daily Conversational",
+    "hinglish_input": "aaj khane me kya bana hai?",
+    "reference_devanagari": "आज खाने में क्या बना है?",
+    "reference_improved_formal": "आज भोजन में क्या बना है?",
+    "reference_improved_casual": "आज खाने में क्या स्पेशल बना है?",
+    "reference_english_translation": "What is cooked for food today?",
+    "notes": "Nasalized 'me' -> 'में'."
+  },
+  {
+    "id": 4,
+    "category": "Daily Conversational",
+    "hinglish_input": "mujhe abhi nikalna padega warna late ho jaunga",
+    "reference_devanagari": "मुझे अभी निकलना पड़ेगा वरना लेट हो जाऊंगा",
+    "reference_improved_formal": "मुझे अभी निकलना होगा अन्यथा देर हो जाएगी।",
+    "reference_improved_casual": "मुझे अभी निकलना पड़ेगा वरना देरी हो जाएगी।",
+    "reference_english_translation": "I will have to leave right now, otherwise I will get late.",
+    "notes": "English loanword 'late' mixed with Hindi future tense."
+  },
+  {
+    "id": 5,
+    "category": "Daily Conversational",
+    "hinglish_input": "yeh movie sach me bohot acchi thi",
+    "reference_devanagari": "यह मूवी सच में बहुत अच्छी थी",
+    "reference_improved_formal": "यह फिल्म वास्तव में बहुत अच्छी थी।",
+    "reference_improved_casual": "यह फिल्म सचमुच बहुत बढ़िया थी।",
+    "reference_english_translation": "This movie was really very good.",
+    "notes": "'acchi' -> 'अच्छी', 'bohot' -> 'बहुत'."
+  },
+  {
+    "id": 6,
+    "category": "Daily Conversational",
+    "hinglish_input": "kya tum mere sath market chaloge?",
+    "reference_devanagari": "क्या तुम मेरे साथ मार्केट चलोगे?",
+    "reference_improved_formal": "क्या आप मेरे साथ बाज़ार चलेंगे?",
+    "reference_improved_casual": "क्या तुम मेरे साथ मार्केट चलोगे?",
+    "reference_english_translation": "Will you come to the market with me?",
+    "notes": "Direct interrogative invitation."
+  },
+  {
+    "id": 7,
+    "category": "Daily Conversational",
+    "hinglish_input": "mujhe lagta hai aaj barish hogi",
+    "reference_devanagari": "मुझे लगता है आज बारिश होगी",
+    "reference_improved_formal": "मुझे प्रतीत होता है कि आज वर्षा होगी।",
+    "reference_improved_casual": "लगता है आज पक्का बारिश होगी।",
+    "reference_english_translation": "I think it will rain today.",
+    "notes": "Nuance: 'barish' (बारिश) weather forecast."
+  },
+  {
+    "id": 8,
+    "category": "Daily Conversational",
+    "hinglish_input": "sab log time pe pahunch jana",
+    "reference_devanagari": "सब लोग टाइम पे पहुँच जाना",
+    "reference_improved_formal": "सभी लोग कृपया समय पर पहुँच जाएँ।",
+    "reference_improved_casual": "सब लोग टाइम पर पहुँच जाना भाई।",
+    "reference_english_translation": "Everyone please arrive on time.",
+    "notes": "'pahunch' nasalization 'पहुँच'."
+  },
+  {
+    "id": 9,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "mera meeting 3 baje schedule hai",
+    "reference_devanagari": "मेरा मीटिंग 3 बजे शेड्यूल है",
+    "reference_improved_formal": "मेरी बैठक 3:00 बजे निर्धारित है।",
+    "reference_improved_casual": "मेरी मीटिंग 3 बजे शेड्यूल्ड है।",
+    "reference_english_translation": "My meeting is scheduled at 3 o'clock.",
+    "notes": "Gender agreement fix in formal Hindi ('मेरी बैठक' vs 'मेरा मीटिंग')."
+  },
+  {
+    "id": 10,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "please mujhe documentation update karke send kar do",
+    "reference_devanagari": "प्लीज़ मुझे डॉक्यूमेंटेशन अपडेट करके सेंड कर दो",
+    "reference_improved_formal": "कृपया मुझे दस्तावेज़ अद्यतन करके प्रेषित कर दीजिए।",
+    "reference_improved_casual": "प्लीज डॉक्यूमेंटेशन अपडेट करके मुझे भेज दो।",
+    "reference_english_translation": "Please update the documentation and send it to me.",
+    "notes": "Frequent tech jargon: 'documentation', 'update', 'send'."
+  },
+  {
+    "id": 11,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "kya client ko presentation deliver ho gaya?",
+    "reference_devanagari": "क्या क्लाइंट को प्रेजेंटेशन डिलीवर हो गया?",
+    "reference_improved_formal": "क्या ग्राहक को प्रस्तुति प्रस्तुत कर दी गई है?",
+    "reference_improved_casual": "क्या क्लाइंट को प्रेजेंटेशन डिलीवर हो गई?",
+    "reference_english_translation": "Has the presentation been delivered to the client?",
+    "notes": "Grammar: 'presentation' feminine gender agreement ('हो गई' vs 'हो गया')."
+  },
+  {
+    "id": 12,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "server down hai isliye bug fix nahi ho pa raha",
+    "reference_devanagari": "सर्वर डाउन है इसलिए बग फिक्स नहीं हो पा रहा",
+    "reference_improved_formal": "सर्वर डाउन होने के कारण तकनीकी त्रुटि का निवारण नहीं हो पा रहा है।",
+    "reference_improved_casual": "सर्वर डाउन है, इसलिए बग ठीक नहीं हो पा रहा।",
+    "reference_english_translation": "The server is down, which is why the bug cannot be fixed.",
+    "notes": "Engineering conversation with multiple loanwords."
+  },
+  {
+    "id": 13,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "kripya PR review karke merge kar dijiye",
+    "reference_devanagari": "कृपया पीआर रिव्यू करके मर्ज कर दीजिए",
+    "reference_improved_formal": "कृपया पुल रिक्वेस्ट की समीक्षा करके उसे मर्ज कर दीजिए।",
+    "reference_improved_casual": "कृपया पीआर चेक करके मर्ज कर दो।",
+    "reference_english_translation": "Please review the pull request and merge it.",
+    "notes": "Acronym 'PR' preservation."
+  },
+  {
+    "id": 14,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "maine invoice check kiya aur payment release kar di",
+    "reference_devanagari": "मैंने इनवॉयस चेक किया और पेमेंट रिलीज़ कर दी",
+    "reference_improved_formal": "मैंने बीजक की जाँच कर ली है और भुगतान जारी कर दिया गया है।",
+    "reference_improved_casual": "मैंने इनवॉइस देख लिया है और पेमेंट कर दी है।",
+    "reference_english_translation": "I checked the invoice and released the payment.",
+    "notes": "Financial code-mixing."
+  },
+  {
+    "id": 15,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "hum next sprint me naya feature launch karenge",
+    "reference_devanagari": "हम नेक्स्ट स्प्रिंट में नया फीचर लॉन्च करेंगे",
+    "reference_improved_formal": "हम आगामी स्प्रिंट में नई सुविधा प्रारंभ करेंगे।",
+    "reference_improved_casual": "हम अगले स्प्रिंट में नया फीचर रोल आउट करेंगे।",
+    "reference_english_translation": "We will launch the new feature in the next sprint.",
+    "notes": "Agile software terminology."
+  },
+  {
+    "id": 16,
+    "category": "Workplace & Tech Code-Mixing",
+    "hinglish_input": "aaj network issue ki wajah se wfh lena pada",
+    "reference_devanagari": "आज नेटवर्क इशू की वजह से डब्ल्यूएफएच लेना पड़ा",
+    "reference_improved_formal": "आज नेटवर्क समस्या के कारण घर से कार्य (WFH) करना पड़ा।",
+    "reference_improved_casual": "आज नेटवर्क इश्यू था इसलिए घर से काम करना पड़ा।",
+    "reference_english_translation": "Had to take work-from-home today due to network issues.",
+    "notes": "Short-form 'wfh' -> 'WFH'."
+  },
+  {
+    "id": 17,
+    "category": "Ambiguous Phonetics & Homographs",
+    "hinglish_input": "usne kaha ki wo kal aayega",
+    "reference_devanagari": "उसने कहा कि वो कल आएगा",
+    "reference_improved_formal": "उसने कहा कि वह कल उपस्थित होगा।",
+    "reference_improved_casual": "उसने कहा था कि वह कल आएगा।",
+    "reference_english_translation": "He said that he will come tomorrow.",
+    "notes": "Homograph test: 'kaha' (said/कहा) vs 'kahaa'/'kahan' (where/कहाँ)."
+  },
+  {
+    "id": 18,
+    "category": "Ambiguous Phonetics & Homographs",
+    "hinglish_input": "tum kal kaha ja rahe the?",
+    "reference_devanagari": "तुम कल कहाँ जा रहे थे?",
+    "reference_improved_formal": "आप कल कहाँ जा रहे थे?",
+    "reference_improved_casual": "कल कहाँ जा रहे थे तुम?",
+    "reference_english_translation": "Where were you going yesterday?",
+    "notes": "Homograph test: 'kaha' in question context should be 'कहाँ' (where)."
+  },
+  {
+    "id": 19,
+    "category": "Ambiguous Phonetics & Homographs",
+    "hinglish_input": "mai bhi wahi soch raha tha",
+    "reference_devanagari": "मैं भी वही सोच रहा था",
+    "reference_improved_formal": "मैं भी वही विचार कर रहा था।",
+    "reference_improved_casual": "अरे, मैं भी यही सोच रहा था।",
+    "reference_english_translation": "I was thinking the exact same thing too.",
+    "notes": "Disambiguation: 'mai' (मैं / I) vs 'me' (में / in) vs 'may' (मई)."
+  },
+  {
+    "id": 20,
+    "category": "Ambiguous Phonetics & Homographs",
+    "hinglish_input": "room me andhera hai",
+    "reference_devanagari": "रूम में अंधेरा है",
+    "reference_improved_formal": "कमरे में अंधकार है।",
+    "reference_improved_casual": "कमरे में काफी अंधेरा है।",
+    "reference_english_translation": "There is darkness in the room.",
+    "notes": "Disambiguation: 'me' should transliterate to 'में' (locative postposition)."
+  },
+  {
+    "id": 21,
+    "category": "Ambiguous Phonetics & Homographs",
+    "hinglish_input": "yeh bat sahi hai ya galat?",
+    "reference_devanagari": "यह बात सही है या गलत?",
+    "reference_improved_formal": "क्या यह बात उचित है अथवा अनुचित?",
+    "reference_improved_casual": "यह बात सच है या गलत?",
+    "reference_english_translation": "Is this statement right or wrong?",
+    "notes": "Phonetic ambiguity: 'bat' can mean 'cricket bat' or 'बात' (matter/point)."
+  },
+  {
+    "id": 22,
+    "category": "Ambiguous Phonetics & Homographs",
+    "hinglish_input": "uska nature sach me bohot accha h",
+    "reference_devanagari": "उसका नेचर सच में बहुत अच्छा है",
+    "reference_improved_formal": "उनका स्वभाव वास्तव में बहुत उत्तम है।",
+    "reference_improved_casual": "उसका स्वभाव सच में बहुत बढ़िया है।",
+    "reference_english_translation": "His nature/temperament is truly very good.",
+    "notes": "SMS spelling 'h' disambiguated to full verb 'है'."
+  },
+  {
+    "id": 23,
+    "category": "Ambiguous Phonetics & Homographs",
+    "hinglish_input": "hum kal waha gaye the lekin koi nahi tha",
+    "reference_devanagari": "हम कल वहाँ गए थे लेकिन कोई नहीं था",
+    "reference_improved_formal": "हम कल वहाँ गए थे, परंतु वहाँ कोई उपस्थित नहीं था।",
+    "reference_improved_casual": "हम कल वहाँ गए थे पर कोई नहीं मिला।",
+    "reference_english_translation": "We went there yesterday, but no one was there.",
+    "notes": "'waha' -> 'वहाँ'."
+  },
+  {
+    "id": 24,
+    "category": "Politeness & Formal Communication",
+    "hinglish_input": "kripya apna identity proof attach kare",
+    "reference_devanagari": "कृपया अपना आइडेंटिटी प्रूफ अटैच करें",
+    "reference_improved_formal": "कृपया अपना पहचान पत्र संलग्न करें।",
+    "reference_improved_casual": "कृपया अपनी आईडी अटैच कर दें।",
+    "reference_english_translation": "Please attach your identity proof.",
+    "notes": "Formal request phrasing with Sanskritized options."
+  },
+  {
+    "id": 25,
+    "category": "Politeness & Formal Communication",
+    "hinglish_input": "aapka application approve ho gaya hai",
+    "reference_devanagari": "आपका एप्लीकेशन अप्रूव हो गया है",
+    "reference_improved_formal": "आपका आवेदन स्वीकृत हो चुका है।",
+    "reference_improved_casual": "आपका एप्लिकेशन अप्रूव हो गया है।",
+    "reference_english_translation": "Your application has been approved.",
+    "notes": "Official notification phrasing."
+  },
+  {
+    "id": 26,
+    "category": "Politeness & Formal Communication",
+    "hinglish_input": "asuvidha ke liye humein khed hai",
+    "reference_devanagari": "असुविधा के लिए हमें खेद है",
+    "reference_improved_formal": "हुई असुविधा के लिए हमें अत्यंत खेद है।",
+    "reference_improved_casual": "असुविधा के लिए माफ़ी चाहते हैं।",
+    "reference_english_translation": "We regret the inconvenience caused.",
+    "notes": "Standard customer service apology statement."
+  },
+  {
+    "id": 27,
+    "category": "Politeness & Formal Communication",
+    "hinglish_input": "kya aap mujhe thoda time de sakte hai?",
+    "reference_devanagari": "क्या आप मुझे थोड़ा टाइम दे सकते हैं?",
+    "reference_improved_formal": "क्या आप मुझे थोड़ा समय देने की कृपा करेंगे?",
+    "reference_improved_casual": "क्या आप मुझे थोड़ा समय दे सकते हैं?",
+    "reference_english_translation": "Could you please give me some time?",
+    "notes": "Respectful query to a senior/peer."
+  },
+  {
+    "id": 28,
+    "category": "Politeness & Formal Communication",
+    "hinglish_input": "dhanyawad aapke sahyog ke liye",
+    "reference_devanagari": "धन्यवाद आपके सहयोग के लिए",
+    "reference_improved_formal": "आपके बहुमूल्य सहयोग के लिए हार्दिक धन्यवाद।",
+    "reference_improved_casual": "आपके सहयोग के लिए शुक्रिया।",
+    "reference_english_translation": "Thank you for your cooperation.",
+    "notes": "Expressing gratitude politely."
+  },
+  {
+    "id": 29,
+    "category": "Politeness & Formal Communication",
+    "hinglish_input": "kripya shanti banaye rakhein",
+    "reference_devanagari": "कृपया शांति बनाए रखें",
+    "reference_improved_formal": "कृपया सभी सज्जन शांति व्यवस्था बनाए रखें।",
+    "reference_improved_casual": "कृपया शांति बनाए रखें।",
+    "reference_english_translation": "Please maintain silence / peace.",
+    "notes": "Public announcement style."
+  },
+  {
+    "id": 30,
+    "category": "Complex Syntax & Conditionals",
+    "hinglish_input": "agar tum kal jaldi aa jate toh hum sath me movie dekhne ja pate",
+    "reference_devanagari": "अगर तुम कल जल्दी आ जाते तो हम साथ में मूवी देखने जा पाते",
+    "reference_improved_formal": "यदि आप कल समय पर आ जाते, तो हम सब मिलकर चलचित्र देखने जा सकते थे।",
+    "reference_improved_casual": "अगर तुम कल जल्दी आ जाते तो हम साथ मूवी देख लेते।",
+    "reference_english_translation": "If you had arrived early yesterday, we could have gone to watch a movie together.",
+    "notes": "Past counterfactual conditional construction."
+  },
+  {
+    "id": 31,
+    "category": "Complex Syntax & Conditionals",
+    "hinglish_input": "jab tak result declare nahi hota tab tak hum tension me rahenge",
+    "reference_devanagari": "जब तक रिजल्ट डिक्लेयर नहीं होता तब तक हम टेंशन में रहेंगे",
+    "reference_improved_formal": "जब तक परीक्षा परिणाम घोषित नहीं होता, तब तक हम चिंतित रहेंगे।",
+    "reference_improved_casual": "जब तक रिजल्ट नहीं आता, तब तक टेंशन बनी रहेगी।",
+    "reference_english_translation": "Until the results are declared, we will remain anxious.",
+    "notes": "Correlative clause 'jab tak ... tab tak'."
+  },
+  {
+    "id": 32,
+    "category": "Complex Syntax & Conditionals",
+    "hinglish_input": "jaise hi signal green hua vaise hi gaadi nikal gayi",
+    "reference_devanagari": "जैसे ही सिग्नल ग्रीन हुआ वैसे ही गाड़ी निकल गई",
+    "reference_improved_formal": "जैसे ही संकेत हरा हुआ, वैसे ही वाहन आगे बढ़ गया।",
+    "reference_improved_casual": "सिग्नल हरा होते ही गाड़ी निकल गई।",
+    "reference_english_translation": "As soon as the signal turned green, the vehicle drove off.",
+    "notes": "Temporal correlative 'jaise hi ... vaise hi'."
+  },
+  {
+    "id": 33,
+    "category": "Complex Syntax & Conditionals",
+    "hinglish_input": "halanki traffic bohot jyada tha fir bhi hum time pe pahunch gaye",
+    "reference_devanagari": "हालाँकि ट्रैफ़िक बहुत ज़्यादा था फिर भी हम टाइम पे पहुँच गए",
+    "reference_improved_formal": "यद्यपि यातायात अत्यधिक था, तथापि हम समय पर पहुँच गए।",
+    "reference_improved_casual": "हालाँकि बहुत ट्रैफ़िक था, फिर भी हम समय पर पहुँच गए।",
+    "reference_english_translation": "Although the traffic was very heavy, we still reached on time.",
+    "notes": "Concessive clause 'halanki ... fir bhi'."
+  },
+  {
+    "id": 34,
+    "category": "Complex Syntax & Conditionals",
+    "hinglish_input": "jo log mehnat karte hai unhe safalta zaroor milti hai",
+    "reference_devanagari": "जो लोग मेहनत करते हैं उन्हें सफलता ज़रूर मिलती है",
+    "reference_improved_formal": "जो व्यक्ति परिश्रम करते हैं, उन्हें निश्चित ही सफलता प्राप्त होती है।",
+    "reference_improved_casual": "मेहनत करने वालों को कामयाबी ज़रूर मिलती है।",
+    "reference_english_translation": "Those who work hard definitely achieve success.",
+    "notes": "Relative clause 'jo ... unhe'."
+  },
+  {
+    "id": 35,
+    "category": "Complex Syntax & Conditionals",
+    "hinglish_input": "chahe kuch bhi ho jaye hum haar nahi manenge",
+    "reference_devanagari": "चाहे कुछ भी हो जाए हम हार नहीं मानेंगे",
+    "reference_improved_formal": "चाहे कोई भी परिस्थिति उत्पन्न हो, हम पराजय स्वीकार नहीं करेंगे।",
+    "reference_improved_casual": "चाहे कुछ भी हो जाए, हम पीछे नहीं हटेंगे।",
+    "reference_english_translation": "No matter what happens, we will not give up.",
+    "notes": "Idiomatic resolve."
+  },
+  {
+    "id": 36,
+    "category": "Slang & SMS Abbreviations",
+    "hinglish_input": "plz kal 5 baje call krna ok",
+    "reference_devanagari": "प्लीज़ कल 5 बजे कॉल करना ओके",
+    "reference_improved_formal": "कृपया कल शाम 5:00 बजे संपर्क करने का कष्ट करें।",
+    "reference_improved_casual": "प्लीज कल 5 बजे कॉल कर लेना।",
+    "reference_english_translation": "Please call tomorrow at 5 o'clock, ok?",
+    "notes": "SMS contractions: 'plz' -> 'प्लीज़', 'krna' -> 'करना'."
+  },
+  {
+    "id": 37,
+    "category": "Slang & SMS Abbreviations",
+    "hinglish_input": "yeh banda ekdum mast h yaar",
+    "reference_devanagari": "यह बंदा एकदम मस्त है यार",
+    "reference_improved_formal": "यह व्यक्ति अत्यंत योग्य एवं सहृदय हैं।",
+    "reference_improved_casual": "यह लड़का बहुत बढ़िया है यार।",
+    "reference_english_translation": "This guy is absolutely awesome, buddy.",
+    "notes": "Urban youth slang 'banda', 'mast', 'yaar'."
+  },
+  {
+    "id": 38,
+    "category": "Slang & SMS Abbreviations",
+    "hinglish_input": "ab aur jhol mat karo sidha point pe aao",
+    "reference_devanagari": "अब और झोल मत करो सीधा पॉइंट पे आओ",
+    "reference_improved_formal": "अब कोई बहाना न बनाकर सीधे मुख्य विषय पर आएँ।",
+    "reference_improved_casual": "बातें मत घुमाओ, सीधे मुद्दे की बात करो।",
+    "reference_english_translation": "Stop beating around the bush and come straight to the point.",
+    "notes": "Bambaiya / Hindi slang 'jhol'."
+  },
+  {
+    "id": 39,
+    "category": "Slang & SMS Abbreviations",
+    "hinglish_input": "thx bro for ur help, kal treat meri taraf se",
+    "reference_devanagari": "थैंक्स ब्रो फॉर योर हेल्प, कल ट्रीट मेरी तरफ से",
+    "reference_improved_formal": "आपकी सहायता के लिए धन्यवाद। कल का सत्कार मेरी ओर से रहेगा।",
+    "reference_improved_casual": "हेल्प के लिए थैंक यू भाई! कल की पार्टी मेरी तरफ से।",
+    "reference_english_translation": "Thanks bro for your help, tomorrow's treat is on me.",
+    "notes": "Heavily abbreviated texting chat."
+  },
+  {
+    "id": 40,
+    "category": "Slang & SMS Abbreviations",
+    "hinglish_input": "kya scene h aaj sham ka?",
+    "reference_devanagari": "क्या सीन है आज शाम का?",
+    "reference_improved_formal": "आज संध्या की क्या योजना है?",
+    "reference_improved_casual": "आज शाम का क्या प्लान है?",
+    "reference_english_translation": "What is the plan for this evening?",
+    "notes": "Slang: 'kya scene h' (what's the plan)."
+  },
+  {
+    "id": 41,
+    "category": "Numbers, Dates & Technical Codes",
+    "hinglish_input": "aapka OTP 482910 hai, kisi se share mat kare",
+    "reference_devanagari": "आपका ओटीपी 482910 है, किसी से शेयर मत करें",
+    "reference_improved_formal": "आपका एकबारीय पासवर्ड (OTP) 482910 है। कृपया इसे किसी के साथ साझा न करें।",
+    "reference_improved_casual": "आपका OTP 482910 है, किसी को मत बताना।",
+    "reference_english_translation": "Your OTP is 482910, do not share it with anyone.",
+    "notes": "Numeric security code preservation."
+  },
+  {
+    "id": 42,
+    "category": "Numbers, Dates & Technical Codes",
+    "hinglish_input": "train number 12951 platform 4 par aayegi",
+    "reference_devanagari": "ट्रेन नंबर 12951 प्लेटफ़ॉर्म 4 पर आएगी",
+    "reference_improved_formal": "रेलगाड़ी संख्या 12951 प्लेटफ़ॉर्म संख्या 4 पर आगमन करेगी।",
+    "reference_improved_casual": "ट्रेन नंबर 12951 प्लेटफॉर्म 4 पर आएगी।",
+    "reference_english_translation": "Train number 12951 will arrive on platform 4.",
+    "notes": "Alphanumeric transit announcement."
+  },
+  {
+    "id": 43,
+    "category": "Numbers, Dates & Technical Codes",
+    "hinglish_input": "deadline 15th August 2026 tak extend ho gayi hai",
+    "reference_devanagari": "डेडलाइन 15 अगस्त 2026 तक एक्सटेंड हो गई है",
+    "reference_improved_formal": "अंतिम तिथि 15 अगस्त 2026 तक विस्तारित कर दी गई है।",
+    "reference_improved_casual": "डेडलाइन 15 अगस्त 2026 तक बढ़ा दी गई है।",
+    "reference_english_translation": "The deadline has been extended until 15th August 2026.",
+    "notes": "Ordinal dates with year."
+  },
+  {
+    "id": 44,
+    "category": "Numbers, Dates & Technical Codes",
+    "hinglish_input": "mene usko 2500 rupees gpay kar diye",
+    "reference_devanagari": "मैंने उसको 2500 रुपए जीपे कर दिए",
+    "reference_improved_formal": "मैंने उन्हें 2500 रुपये का डिजिटल भुगतान प्रेषित कर दिया है।",
+    "reference_improved_casual": "मैंने उसे 2500 रुपये गूगल पे कर दिए।",
+    "reference_english_translation": "I sent him 2500 rupees via GPay.",
+    "notes": "App name 'gpay' and monetary amounts."
+  },
+  {
+    "id": 45,
+    "category": "Numbers, Dates & Technical Codes",
+    "hinglish_input": "error code 404 aa raha hai URL check karo",
+    "reference_devanagari": "एरर कोड 404 आ रहा है यूआरएल चेक करो",
+    "reference_improved_formal": "त्रुटि कोड 404 प्रदर्शित हो रहा है, कृपया यूआरएल (URL) की सत्यता जांचें।",
+    "reference_improved_casual": "404 एरर आ रहा है, लिंक चेक कर लो।",
+    "reference_english_translation": "Error code 404 is appearing, please check the URL.",
+    "notes": "Standard HTTP error code and URL preservation."
+  }
+]

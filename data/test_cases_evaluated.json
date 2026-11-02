@@ -1,0 +1,880 @@
+{
+  "overall_summary": {
+    "total_test_cases": 45,
+    "mean_CER": 0.189,
+    "mean_WER": 0.353,
+    "mean_Word_Accuracy": 64.7,
+    "mean_BLEU": 1.56,
+    "mean_chrF": 5.33
+  },
+  "category_summary": {
+    "Daily Conversational": {
+      "count": 8,
+      "mean_CER": 0.0822,
+      "mean_WER": 0.2045,
+      "mean_Word_Accuracy": 79.55,
+      "mean_BLEU": 1.55,
+      "mean_chrF": 4.72
+    },
+    "Workplace & Tech Code-Mixing": {
+      "count": 8,
+      "mean_CER": 0.3581,
+      "mean_WER": 0.5699,
+      "mean_Word_Accuracy": 43.01,
+      "mean_BLEU": 1.21,
+      "mean_chrF": 4.41
+    },
+    "Ambiguous Phonetics & Homographs": {
+      "count": 7,
+      "mean_CER": 0.0887,
+      "mean_WER": 0.2109,
+      "mean_Word_Accuracy": 78.91,
+      "mean_BLEU": 1.36,
+      "mean_chrF": 4.97
+    },
+    "Politeness & Formal Communication": {
+      "count": 6,
+      "mean_CER": 0.2278,
+      "mean_WER": 0.4292,
+      "mean_Word_Accuracy": 57.08,
+      "mean_BLEU": 0.62,
+      "mean_chrF": 5.05
+    },
+    "Complex Syntax & Conditionals": {
+      "count": 6,
+      "mean_CER": 0.185,
+      "mean_WER": 0.4048,
+      "mean_Word_Accuracy": 59.52,
+      "mean_BLEU": 0.0,
+      "mean_chrF": 4.02
+    },
+    "Slang & SMS Abbreviations": {
+      "count": 5,
+      "mean_CER": 0.1324,
+      "mean_WER": 0.226,
+      "mean_Word_Accuracy": 77.4,
+      "mean_BLEU": 2.53,
+      "mean_chrF": 5.08
+    },
+    "Numbers, Dates & Technical Codes": {
+      "count": 5,
+      "mean_CER": 0.2449,
+      "mean_WER": 0.4159,
+      "mean_Word_Accuracy": 58.41,
+      "mean_BLEU": 4.39,
+      "mean_chrF": 10.46
+    }
+  },
+  "test_cases": [
+    {
+      "id": 1,
+      "category": "Daily Conversational",
+      "input": "bhai kaisa hai tu, bohot din se baat nahi hui",
+      "ref_devanagari": "भाई कैसा है तू, बहुत दिन से बात नहीं हुई",
+      "hyp_devanagari": "भाई कैसा है तू, बहुत दिन से बात नहीं हुइ",
+      "hyp_improved_formal": "भाई कैसा है तू, बहुत दिन से बात नहीं हुइ।",
+      "ref_translation": "Brother, how are you? We haven't spoken in a long time.",
+      "hyp_translation": "Translated: भाई कैसा है तू, बहुत दिन से बात नहीं हुइ",
+      "metrics": {
+        "CER": 0.025,
+        "WER": 0.1,
+        "Word_Accuracy": 90.0,
+        "BLEU": 2.86,
+        "chrF": 3.38
+      },
+      "notes": "Informal greeting with SMS-style spelling 'bohot' -> 'बहुत'."
+    },
+    {
+      "id": 2,
+      "category": "Daily Conversational",
+      "input": "kal sham ko chai pe milte hai",
+      "ref_devanagari": "कल शाम को चाय पे मिलते हैं",
+      "hyp_devanagari": "कल शाम को चाय पे मिलते है",
+      "hyp_improved_formal": "कल शाम को चाय पे मिलते है।",
+      "ref_translation": "Let's meet for tea tomorrow evening.",
+      "hyp_translation": "Translated: कल शाम को चाय पे मिलते है",
+      "metrics": {
+        "CER": 0.0385,
+        "WER": 0.1429,
+        "Word_Accuracy": 85.71,
+        "BLEU": 0.0,
+        "chrF": 4.37
+      },
+      "notes": "Colloquial 'pe' -> standard 'पर'."
+    },
+    {
+      "id": 3,
+      "category": "Daily Conversational",
+      "input": "aaj khane me kya bana hai?",
+      "ref_devanagari": "आज खाने में क्या बना है?",
+      "hyp_devanagari": "आज खने में क्या बन है?",
+      "hyp_improved_formal": "आज खने में क्या बन है?",
+      "ref_translation": "What is cooked for food today?",
+      "hyp_translation": "Translated: आज खने में क्या बन है?",
+      "metrics": {
+        "CER": 0.0833,
+        "WER": 0.3333,
+        "Word_Accuracy": 66.67,
+        "BLEU": 4.77,
+        "chrF": 6.56
+      },
+      "notes": "Nasalized 'me' -> 'में'."
+    },
+    {
+      "id": 4,
+      "category": "Daily Conversational",
+      "input": "mujhe abhi nikalna padega warna late ho jaunga",
+      "ref_devanagari": "मुझे अभी निकलना पड़ेगा वरना लेट हो जाऊंगा",
+      "hyp_devanagari": "मुझे अभि निकलना पड़ेगा वरना लते हो जाऊंगा",
+      "hyp_improved_formal": "मुझे अभि निकलना पड़ेगा वरना लते हो जाऊंगा।",
+      "ref_translation": "I will have to leave right now, otherwise I will get late.",
+      "hyp_translation": "Translated: मुझे अभि निकलना पड़ेगा वरना लते हो जाऊंगा",
+      "metrics": {
+        "CER": 0.0732,
+        "WER": 0.25,
+        "Word_Accuracy": 75.0,
+        "BLEU": 0.0,
+        "chrF": 5.09
+      },
+      "notes": "English loanword 'late' mixed with Hindi future tense."
+    },
+    {
+      "id": 5,
+      "category": "Daily Conversational",
+      "input": "yeh movie sach me bohot acchi thi",
+      "ref_devanagari": "यह मूवी सच में बहुत अच्छी थी",
+      "hyp_devanagari": "यह मोविए सच में बहुत अच्छी थी",
+      "hyp_improved_formal": "यह मोविए सच में बहुत अच्छी थी।",
+      "ref_translation": "This movie was really very good.",
+      "hyp_translation": "Translated: यह मोविए सच में बहुत अच्छी थी",
+      "metrics": {
+        "CER": 0.1071,
+        "WER": 0.1429,
+        "Word_Accuracy": 85.71,
+        "BLEU": 0.0,
+        "chrF": 4.69
+      },
+      "notes": "'acchi' -> 'अच्छी', 'bohot' -> 'बहुत'."
+    },
+    {
+      "id": 6,
+      "category": "Daily Conversational",
+      "input": "kya tum mere sath market chaloge?",
+      "ref_devanagari": "क्या तुम मेरे साथ मार्केट चलोगे?",
+      "hyp_devanagari": "क्या तुम मेरे सथ मर्केत चलोगे?",
+      "hyp_improved_formal": "क्या आप मेरे सथ मर्केत चलोगे?",
+      "ref_translation": "Will you come to the market with me?",
+      "hyp_translation": "Translated: क्या तुम मेरे सथ मर्केत चलोगे?",
+      "metrics": {
+        "CER": 0.0938,
+        "WER": 0.3333,
+        "Word_Accuracy": 66.67,
+        "BLEU": 4.77,
+        "chrF": 3.29
+      },
+      "notes": "Direct interrogative invitation."
+    },
+    {
+      "id": 7,
+      "category": "Daily Conversational",
+      "input": "mujhe lagta hai aaj barish hogi",
+      "ref_devanagari": "मुझे लगता है आज बारिश होगी",
+      "hyp_devanagari": "मुझे लग्त है आज बारिश होगी",
+      "hyp_improved_formal": "मुझे लग्त है आज वर्षा होगी।",
+      "ref_translation": "I think it will rain today.",
+      "hyp_translation": "Translated: मुझे लग्त है आज बारिश होगी",
+      "metrics": {
+        "CER": 0.0769,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 0.0,
+        "chrF": 5.59
+      },
+      "notes": "Nuance: 'barish' (बारिश) weather forecast."
+    },
+    {
+      "id": 8,
+      "category": "Daily Conversational",
+      "input": "sab log time pe pahunch jana",
+      "ref_devanagari": "सब लोग टाइम पे पहुँच जाना",
+      "hyp_devanagari": "सब लोग तिमे पे पहुँच जाना",
+      "hyp_improved_formal": "सब लोग तिमे पे पहुँच जाना।",
+      "ref_translation": "Everyone please arrive on time.",
+      "hyp_translation": "Translated: सब लोग तिमे पे पहुँच जाना",
+      "metrics": {
+        "CER": 0.16,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 0.0,
+        "chrF": 4.8
+      },
+      "notes": "'pahunch' nasalization 'पहुँच'."
+    },
+    {
+      "id": 9,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "mera meeting 3 baje schedule hai",
+      "ref_devanagari": "मेरा मीटिंग 3 बजे शेड्यूल है",
+      "hyp_devanagari": "मेरा मीतिङ 3 बजे स्चेदुले है",
+      "hyp_improved_formal": "मेरा मीतिङ 3 बजे स्चेदुले है।",
+      "ref_translation": "My meeting is scheduled at 3 o'clock.",
+      "hyp_translation": "Translated: मेरा मीतिङ 3 बजे स्चेदुले है",
+      "metrics": {
+        "CER": 0.3571,
+        "WER": 0.3333,
+        "Word_Accuracy": 66.67,
+        "BLEU": 5.52,
+        "chrF": 5.31
+      },
+      "notes": "Gender agreement fix in formal Hindi ('मेरी बैठक' vs 'मेरा मीटिंग')."
+    },
+    {
+      "id": 10,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "please mujhe documentation update karke send kar do",
+      "ref_devanagari": "प्लीज़ मुझे डॉक्यूमेंटेशन अपडेट करके सेंड कर दो",
+      "hyp_devanagari": "प्लीज़ मुझे दोcउमेन्ततिओं उप्दते कर्के सेन्द कर दो",
+      "hyp_improved_formal": "प्लीज़ मुझे दोcउमेन्ततिओं उप्दते कर्के सेन्द कर दो।",
+      "ref_translation": "Please update the documentation and send it to me.",
+      "hyp_translation": "Translated: प्लीज़ मुझे दोcउमेन्ततिओं उप्दते कर्के सेन्द कर दो",
+      "metrics": {
+        "CER": 0.4681,
+        "WER": 0.5,
+        "Word_Accuracy": 50.0,
+        "BLEU": 0.0,
+        "chrF": 5.31
+      },
+      "notes": "Frequent tech jargon: 'documentation', 'update', 'send'."
+    },
+    {
+      "id": 11,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "kya client ko presentation deliver ho gaya?",
+      "ref_devanagari": "क्या क्लाइंट को प्रेजेंटेशन डिलीवर हो गया?",
+      "hyp_devanagari": "क्या cलिएन्त को प्रेसेन्ततिओं देलिवेर हो गय?",
+      "hyp_improved_formal": "क्या cलिएन्त को प्रेसेन्ततिओं देलिवेर हो गय?",
+      "ref_translation": "Has the presentation been delivered to the client?",
+      "hyp_translation": "Translated: क्या cलिएन्त को प्रेसेन्ततिओं देलिवेर हो गय?",
+      "metrics": {
+        "CER": 0.4762,
+        "WER": 0.5714,
+        "Word_Accuracy": 42.86,
+        "BLEU": 4.2,
+        "chrF": 4.92
+      },
+      "notes": "Grammar: 'presentation' feminine gender agreement ('हो गई' vs 'हो गया')."
+    },
+    {
+      "id": 12,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "server down hai isliye bug fix nahi ho pa raha",
+      "ref_devanagari": "सर्वर डाउन है इसलिए बग फिक्स नहीं हो पा रहा",
+      "hyp_devanagari": "सेर्वेर दोवं है इसलिए बुग फ़िक्स नहीं हो प रहा",
+      "hyp_improved_formal": "सेर्वेर दोवं है इसलिए बुग फ़िक्स नहीं हो प रहा।",
+      "ref_translation": "The server is down, which is why the bug cannot be fixed.",
+      "hyp_translation": "Translated: सेर्वेर दोवं है इसलिए बुग फ़िक्स नहीं हो प रहा",
+      "metrics": {
+        "CER": 0.2093,
+        "WER": 0.5,
+        "Word_Accuracy": 50.0,
+        "BLEU": 0.0,
+        "chrF": 3.61
+      },
+      "notes": "Engineering conversation with multiple loanwords."
+    },
+    {
+      "id": 13,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "kripya PR review karke merge kar dijiye",
+      "ref_devanagari": "कृपया पीआर रिव्यू करके मर्ज कर दीजिए",
+      "hyp_devanagari": "कृपया पीआर रेविएव कर्के मेर्गे कर दिजिये",
+      "hyp_improved_formal": "कृपया पीआर रेविएव कर्के मेर्गे कर दिजिये।",
+      "ref_translation": "Please review the pull request and merge it.",
+      "hyp_translation": "Translated: कृपया पीआर रेविएव कर्के मेर्गे कर दिजिये",
+      "metrics": {
+        "CER": 0.3056,
+        "WER": 0.5714,
+        "Word_Accuracy": 42.86,
+        "BLEU": 0.0,
+        "chrF": 4.33
+      },
+      "notes": "Acronym 'PR' preservation."
+    },
+    {
+      "id": 14,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "maine invoice check kiya aur payment release kar di",
+      "ref_devanagari": "मैंने इनवॉयस चेक किया और पेमेंट रिलीज़ कर दी",
+      "hyp_devanagari": "मइने इन्वोइcए चेcक किय और पय्मेन्त रेलेअसे कर दि",
+      "hyp_improved_formal": "मइने इन्वोइcए चेcक किय और पय्मेन्त रेलेअसे कर दि।",
+      "ref_translation": "I checked the invoice and released the payment.",
+      "hyp_translation": "Translated: मइने इन्वोइcए चेcक किय और पय्मेन्त रेलेअसे कर दि",
+      "metrics": {
+        "CER": 0.4545,
+        "WER": 0.7778,
+        "Word_Accuracy": 22.22,
+        "BLEU": 0.0,
+        "chrF": 5.15
+      },
+      "notes": "Financial code-mixing."
+    },
+    {
+      "id": 15,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "hum next sprint me naya feature launch karenge",
+      "ref_devanagari": "हम नेक्स्ट स्प्रिंट में नया फीचर लॉन्च करेंगे",
+      "hyp_devanagari": "हम नेक्स्त स्प्रिन्त में नय फ़ेअतुरे लउन्च करेङे",
+      "hyp_improved_formal": "हम नेक्स्त स्प्रिन्त में नय फ़ेअतुरे लउन्च करेङे।",
+      "ref_translation": "We will launch the new feature in the next sprint.",
+      "hyp_translation": "Translated: हम नेक्स्त स्प्रिन्त में नय फ़ेअतुरे लउन्च करेङे",
+      "metrics": {
+        "CER": 0.3111,
+        "WER": 0.75,
+        "Word_Accuracy": 25.0,
+        "BLEU": 0.0,
+        "chrF": 3.88
+      },
+      "notes": "Agile software terminology."
+    },
+    {
+      "id": 16,
+      "category": "Workplace & Tech Code-Mixing",
+      "input": "aaj network issue ki wajah se wfh lena pada",
+      "ref_devanagari": "आज नेटवर्क इशू की वजह से डब्ल्यूएफएच लेना पड़ा",
+      "hyp_devanagari": "आज नेत्वोर्क इस्सुए कि वजह से डब्ल्यूएफएच लेन पद",
+      "hyp_improved_formal": "आज नेत्वोर्क इस्सुए कि वजह से डब्ल्यूएफएच लेन पद।",
+      "ref_translation": "Had to take work-from-home today due to network issues.",
+      "hyp_translation": "Translated: आज नेत्वोर्क इस्सुए कि वजह से डब्ल्यूएफएच लेन पद",
+      "metrics": {
+        "CER": 0.2826,
+        "WER": 0.5556,
+        "Word_Accuracy": 44.44,
+        "BLEU": 0.0,
+        "chrF": 2.79
+      },
+      "notes": "Short-form 'wfh' -> 'WFH'."
+    },
+    {
+      "id": 17,
+      "category": "Ambiguous Phonetics & Homographs",
+      "input": "usne kaha ki wo kal aayega",
+      "ref_devanagari": "उसने कहा कि वो कल आएगा",
+      "hyp_devanagari": "उस्ने कहा कि वो कल आएगा",
+      "hyp_improved_formal": "उस्ने कहा कि वो कल आएगा।",
+      "ref_translation": "He said that he will come tomorrow.",
+      "hyp_translation": "Translated: उस्ने कहा कि वो कल आएगा",
+      "metrics": {
+        "CER": 0.0455,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 0.0,
+        "chrF": 5.19
+      },
+      "notes": "Homograph test: 'kaha' (said/कहा) vs 'kahaa'/'kahan' (where/कहाँ)."
+    },
+    {
+      "id": 18,
+      "category": "Ambiguous Phonetics & Homographs",
+      "input": "tum kal kaha ja rahe the?",
+      "ref_devanagari": "तुम कल कहाँ जा रहे थे?",
+      "hyp_devanagari": "तुम कल कहाँ ज रहे थे?",
+      "hyp_improved_formal": "आप कल कहाँ ज रहे थे?",
+      "ref_translation": "Where were you going yesterday?",
+      "hyp_translation": "Translated: तुम कल कहाँ ज रहे थे?",
+      "metrics": {
+        "CER": 0.0455,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 4.77,
+        "chrF": 5.58
+      },
+      "notes": "Homograph test: 'kaha' in question context should be 'कहाँ' (where)."
+    },
+    {
+      "id": 19,
+      "category": "Ambiguous Phonetics & Homographs",
+      "input": "mai bhi wahi soch raha tha",
+      "ref_devanagari": "मैं भी वही सोच रहा था",
+      "hyp_devanagari": "मैं भी वहि सोच रहा था",
+      "hyp_improved_formal": "मैं भी वहि सोच रहा था।",
+      "ref_translation": "I was thinking the exact same thing too.",
+      "hyp_translation": "Translated: मैं भी वहि सोच रहा था",
+      "metrics": {
+        "CER": 0.0476,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 0.0,
+        "chrF": 3.14
+      },
+      "notes": "Disambiguation: 'mai' (मैं / I) vs 'me' (में / in) vs 'may' (मई)."
+    },
+    {
+      "id": 20,
+      "category": "Ambiguous Phonetics & Homographs",
+      "input": "room me andhera hai",
+      "ref_devanagari": "रूम में अंधेरा है",
+      "hyp_devanagari": "रूं में अन्धेर है",
+      "hyp_improved_formal": "रूं में अन्धेर है।",
+      "ref_translation": "There is darkness in the room.",
+      "hyp_translation": "Translated: रूं में अन्धेर है",
+      "metrics": {
+        "CER": 0.2353,
+        "WER": 0.5,
+        "Word_Accuracy": 50.0,
+        "BLEU": 0.0,
+        "chrF": 5.33
+      },
+      "notes": "Disambiguation: 'me' should transliterate to 'में' (locative postposition)."
+    },
+    {
+      "id": 21,
+      "category": "Ambiguous Phonetics & Homographs",
+      "input": "yeh bat sahi hai ya galat?",
+      "ref_devanagari": "यह बात सही है या गलत?",
+      "hyp_devanagari": "यह बात सही है या गलत?",
+      "hyp_improved_formal": "यह बात सही है या गलत?",
+      "ref_translation": "Is this statement right or wrong?",
+      "hyp_translation": "Translated: यह बात सही है या गलत?",
+      "metrics": {
+        "CER": 0.0,
+        "WER": 0.0,
+        "Word_Accuracy": 100.0,
+        "BLEU": 4.77,
+        "chrF": 6.09
+      },
+      "notes": "Phonetic ambiguity: 'bat' can mean 'cricket bat' or 'बात' (matter/point)."
+    },
+    {
+      "id": 22,
+      "category": "Ambiguous Phonetics & Homographs",
+      "input": "uska nature sach me bohot accha h",
+      "ref_devanagari": "उसका नेचर सच में बहुत अच्छा है",
+      "hyp_devanagari": "उसका नतुरे सच में बहुत अच्छा है",
+      "hyp_improved_formal": "उसका नतुरे सच में बहुत अच्छा है।",
+      "ref_translation": "His nature/temperament is truly very good.",
+      "hyp_translation": "Translated: उसका नतुरे सच में बहुत अच्छा है",
+      "metrics": {
+        "CER": 0.1,
+        "WER": 0.1429,
+        "Word_Accuracy": 85.71,
+        "BLEU": 0.0,
+        "chrF": 5.47
+      },
+      "notes": "SMS spelling 'h' disambiguated to full verb 'है'."
+    },
+    {
+      "id": 23,
+      "category": "Ambiguous Phonetics & Homographs",
+      "input": "hum kal waha gaye the lekin koi nahi tha",
+      "ref_devanagari": "हम कल वहाँ गए थे लेकिन कोई नहीं था",
+      "hyp_devanagari": "हम कल वह गये थे लेकिन कोइ नहीं था",
+      "hyp_improved_formal": "हम कल वह गये थे लेकिन कोइ नहीं था।",
+      "ref_translation": "We went there yesterday, but no one was there.",
+      "hyp_translation": "Translated: हम कल वह गये थे लेकिन कोइ नहीं था",
+      "metrics": {
+        "CER": 0.1471,
+        "WER": 0.3333,
+        "Word_Accuracy": 66.67,
+        "BLEU": 0.0,
+        "chrF": 4.0
+      },
+      "notes": "'waha' -> 'वहाँ'."
+    },
+    {
+      "id": 24,
+      "category": "Politeness & Formal Communication",
+      "input": "kripya apna identity proof attach kare",
+      "ref_devanagari": "कृपया अपना आइडेंटिटी प्रूफ अटैच करें",
+      "hyp_devanagari": "कृपया अप्न इदेन्तित्य प्रूफ़ अत्तच करे",
+      "hyp_improved_formal": "कृपया अप्न इदेन्तित्य प्रूफ़ अत्तच करे।",
+      "ref_translation": "Please attach your identity proof.",
+      "hyp_translation": "Translated: कृपया अप्न इदेन्तित्य प्रूफ़ अत्तच करे",
+      "metrics": {
+        "CER": 0.4167,
+        "WER": 0.8333,
+        "Word_Accuracy": 16.67,
+        "BLEU": 0.0,
+        "chrF": 5.1
+      },
+      "notes": "Formal request phrasing with Sanskritized options."
+    },
+    {
+      "id": 25,
+      "category": "Politeness & Formal Communication",
+      "input": "aapka application approve ho gaya hai",
+      "ref_devanagari": "आपका एप्लीकेशन अप्रूव हो गया है",
+      "hyp_devanagari": "आपका अप्प्लिcअतिओं अप्प्रोवे हो गय है",
+      "hyp_improved_formal": "आपका अप्प्लिcअतिओं अप्प्रोवे हो गय है।",
+      "ref_translation": "Your application has been approved.",
+      "hyp_translation": "Translated: आपका अप्प्लिcअतिओं अप्प्रोवे हो गय है",
+      "metrics": {
+        "CER": 0.4839,
+        "WER": 0.5,
+        "Word_Accuracy": 50.0,
+        "BLEU": 0.0,
+        "chrF": 6.53
+      },
+      "notes": "Official notification phrasing."
+    },
+    {
+      "id": 26,
+      "category": "Politeness & Formal Communication",
+      "input": "asuvidha ke liye humein khed hai",
+      "ref_devanagari": "असुविधा के लिए हमें खेद है",
+      "hyp_devanagari": "असुविधा के लिये हमें खेद है",
+      "hyp_improved_formal": "असुविधा के लिये हमें खेद है।",
+      "ref_translation": "We regret the inconvenience caused.",
+      "hyp_translation": "Translated: असुविधा के लिये हमें खेद है",
+      "metrics": {
+        "CER": 0.0769,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 0.0,
+        "chrF": 4.26
+      },
+      "notes": "Standard customer service apology statement."
+    },
+    {
+      "id": 27,
+      "category": "Politeness & Formal Communication",
+      "input": "kya aap mujhe thoda time de sakte hai?",
+      "ref_devanagari": "क्या आप मुझे थोड़ा टाइम दे सकते हैं?",
+      "hyp_devanagari": "क्या आप मुझे थोड़ा तिमे दे सक्ते है?",
+      "hyp_improved_formal": "क्या आप मुझे थोड़ा तिमे दे सक्ते है?",
+      "ref_translation": "Could you please give me some time?",
+      "hyp_translation": "Translated: क्या आप मुझे थोड़ा तिमे दे सक्ते है?",
+      "metrics": {
+        "CER": 0.1667,
+        "WER": 0.375,
+        "Word_Accuracy": 62.5,
+        "BLEU": 3.75,
+        "chrF": 3.74
+      },
+      "notes": "Respectful query to a senior/peer."
+    },
+    {
+      "id": 28,
+      "category": "Politeness & Formal Communication",
+      "input": "dhanyawad aapke sahyog ke liye",
+      "ref_devanagari": "धन्यवाद आपके सहयोग के लिए",
+      "hyp_devanagari": "धन्यवाद आपके सहयोग के लिये",
+      "hyp_improved_formal": "धन्यवाद आपके सहयोग के लिये।",
+      "ref_translation": "Thank you for your cooperation.",
+      "hyp_translation": "Translated: धन्यवाद आपके सहयोग के लिये",
+      "metrics": {
+        "CER": 0.08,
+        "WER": 0.2,
+        "Word_Accuracy": 80.0,
+        "BLEU": 0.0,
+        "chrF": 5.98
+      },
+      "notes": "Expressing gratitude politely."
+    },
+    {
+      "id": 29,
+      "category": "Politeness & Formal Communication",
+      "input": "kripya shanti banaye rakhein",
+      "ref_devanagari": "कृपया शांति बनाए रखें",
+      "hyp_devanagari": "कृपया शांति बनये रखेइं",
+      "hyp_improved_formal": "कृपया शांति बनये रखेइं।",
+      "ref_translation": "Please maintain silence / peace.",
+      "hyp_translation": "Translated: कृपया शांति बनये रखेइं",
+      "metrics": {
+        "CER": 0.1429,
+        "WER": 0.5,
+        "Word_Accuracy": 50.0,
+        "BLEU": 0.0,
+        "chrF": 4.72
+      },
+      "notes": "Public announcement style."
+    },
+    {
+      "id": 30,
+      "category": "Complex Syntax & Conditionals",
+      "input": "agar tum kal jaldi aa jate toh hum sath me movie dekhne ja pate",
+      "ref_devanagari": "अगर तुम कल जल्दी आ जाते तो हम साथ में मूवी देखने जा पाते",
+      "hyp_devanagari": "अगर तुम कल जल्दी आ जते तो हम सथ में मोविए देख्ने ज पते",
+      "hyp_improved_formal": "अगर आप कल जल्दी आ जते तो हम सथ में मोविए देख्ने ज पते।",
+      "ref_translation": "If you had arrived early yesterday, we could have gone to watch a movie together.",
+      "hyp_translation": "Translated: अगर तुम कल जल्दी आ जते तो हम सथ में मोविए देख्ने ज पते",
+      "metrics": {
+        "CER": 0.1429,
+        "WER": 0.4286,
+        "Word_Accuracy": 57.14,
+        "BLEU": 0.0,
+        "chrF": 3.14
+      },
+      "notes": "Past counterfactual conditional construction."
+    },
+    {
+      "id": 31,
+      "category": "Complex Syntax & Conditionals",
+      "input": "jab tak result declare nahi hota tab tak hum tension me rahenge",
+      "ref_devanagari": "जब तक रिजल्ट डिक्लेयर नहीं होता तब तक हम टेंशन में रहेंगे",
+      "hyp_devanagari": "जब तक रेसुल्त देcलरे नहीं होत तब तक हम तेन्सिओं में रहेङे",
+      "hyp_improved_formal": "जब तक रेसुल्त देcलरे नहीं होत तब तक हम तेन्सिओं में रहेङे।",
+      "ref_translation": "Until the results are declared, we will remain anxious.",
+      "hyp_translation": "Translated: जब तक रेसुल्त देcलरे नहीं होत तब तक हम तेन्सिओं में रहेङे",
+      "metrics": {
+        "CER": 0.3684,
+        "WER": 0.4167,
+        "Word_Accuracy": 58.33,
+        "BLEU": 0.0,
+        "chrF": 4.44
+      },
+      "notes": "Correlative clause 'jab tak ... tab tak'."
+    },
+    {
+      "id": 32,
+      "category": "Complex Syntax & Conditionals",
+      "input": "jaise hi signal green hua vaise hi gaadi nikal gayi",
+      "ref_devanagari": "जैसे ही सिग्नल ग्रीन हुआ वैसे ही गाड़ी निकल गई",
+      "hyp_devanagari": "जैसे हि सिग्नल ग्रीं हुअ वइसे हि गाड़ी निकल गयि",
+      "hyp_improved_formal": "जैसे हि सिग्नल ग्रीं हुअ वइसे हि गाड़ी निकल गयि।",
+      "ref_translation": "As soon as the signal turned green, the vehicle drove off.",
+      "hyp_translation": "Translated: जैसे हि सिग्नल ग्रीं हुअ वइसे हि गाड़ी निकल गयि",
+      "metrics": {
+        "CER": 0.1522,
+        "WER": 0.6,
+        "Word_Accuracy": 40.0,
+        "BLEU": 0.0,
+        "chrF": 3.47
+      },
+      "notes": "Temporal correlative 'jaise hi ... vaise hi'."
+    },
+    {
+      "id": 33,
+      "category": "Complex Syntax & Conditionals",
+      "input": "halanki traffic bohot jyada tha fir bhi hum time pe pahunch gaye",
+      "ref_devanagari": "हालाँकि ट्रैफ़िक बहुत ज़्यादा था फिर भी हम टाइम पे पहुँच गए",
+      "hyp_devanagari": "हालाँकि त्रफ़्फ़िc बहुत ज़्यादा था फिर भी हम तिमे पे पहुँच गये",
+      "hyp_improved_formal": "हालाँकि त्रफ़्फ़िc बहुत ज़्यादा था फिर भी हम तिमे पे पहुँच गये।",
+      "ref_translation": "Although the traffic was very heavy, we still reached on time.",
+      "hyp_translation": "Translated: हालाँकि त्रफ़्फ़िc बहुत ज़्यादा था फिर भी हम तिमे पे पहुँच गये",
+      "metrics": {
+        "CER": 0.1864,
+        "WER": 0.25,
+        "Word_Accuracy": 75.0,
+        "BLEU": 0.0,
+        "chrF": 3.72
+      },
+      "notes": "Concessive clause 'halanki ... fir bhi'."
+    },
+    {
+      "id": 34,
+      "category": "Complex Syntax & Conditionals",
+      "input": "jo log mehnat karte hai unhe safalta zaroor milti hai",
+      "ref_devanagari": "जो लोग मेहनत करते हैं उन्हें सफलता ज़रूर मिलती है",
+      "hyp_devanagari": "जो लोग मेहनत कर्ते है उन्हे सफलता ज़रूर मिल्ति है",
+      "hyp_improved_formal": "जो लोग मेहनत कर्ते है उन्हे सफलता ज़रूर मिल्ति है।",
+      "ref_translation": "Those who work hard definitely achieve success.",
+      "hyp_translation": "Translated: जो लोग मेहनत कर्ते है उन्हे सफलता ज़रूर मिल्ति है",
+      "metrics": {
+        "CER": 0.102,
+        "WER": 0.4,
+        "Word_Accuracy": 60.0,
+        "BLEU": 0.0,
+        "chrF": 4.27
+      },
+      "notes": "Relative clause 'jo ... unhe'."
+    },
+    {
+      "id": 35,
+      "category": "Complex Syntax & Conditionals",
+      "input": "chahe kuch bhi ho jaye hum haar nahi manenge",
+      "ref_devanagari": "चाहे कुछ भी हो जाए हम हार नहीं मानेंगे",
+      "hyp_devanagari": "चहे कुछ भी हो जये हम हार नहीं मनेङे",
+      "hyp_improved_formal": "चहे कुछ भी हो जये हम हार नहीं मनेङे।",
+      "ref_translation": "No matter what happens, we will not give up.",
+      "hyp_translation": "Translated: चहे कुछ भी हो जये हम हार नहीं मनेङे",
+      "metrics": {
+        "CER": 0.1579,
+        "WER": 0.3333,
+        "Word_Accuracy": 66.67,
+        "BLEU": 0.0,
+        "chrF": 5.08
+      },
+      "notes": "Idiomatic resolve."
+    },
+    {
+      "id": 36,
+      "category": "Slang & SMS Abbreviations",
+      "input": "plz kal 5 baje call krna ok",
+      "ref_devanagari": "प्लीज़ कल 5 बजे कॉल करना ओके",
+      "hyp_devanagari": "प्लीज़ कल 5 बजे cअल्ल करना ओक",
+      "hyp_improved_formal": "प्लीज़ कल 5 बजे cअल्ल करना ओक।",
+      "ref_translation": "Please call tomorrow at 5 o'clock, ok?",
+      "hyp_translation": "Translated: प्लीज़ कल 5 बजे cअल्ल करना ओक",
+      "metrics": {
+        "CER": 0.1786,
+        "WER": 0.2857,
+        "Word_Accuracy": 71.43,
+        "BLEU": 4.77,
+        "chrF": 5.16
+      },
+      "notes": "SMS contractions: 'plz' -> 'प्लीज़', 'krna' -> 'करना'."
+    },
+    {
+      "id": 37,
+      "category": "Slang & SMS Abbreviations",
+      "input": "yeh banda ekdum mast h yaar",
+      "ref_devanagari": "यह बंदा एकदम मस्त है यार",
+      "hyp_devanagari": "यह बंदा एक्दुं मस्त है यार",
+      "hyp_improved_formal": "यह बंदा एक्दुं मस्त है यार।",
+      "ref_translation": "This guy is absolutely awesome, buddy.",
+      "hyp_translation": "Translated: यह बंदा एक्दुं मस्त है यार",
+      "metrics": {
+        "CER": 0.125,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 0.0,
+        "chrF": 4.59
+      },
+      "notes": "Urban youth slang 'banda', 'mast', 'yaar'."
+    },
+    {
+      "id": 38,
+      "category": "Slang & SMS Abbreviations",
+      "input": "ab aur jhol mat karo sidha point pe aao",
+      "ref_devanagari": "अब और झोल मत करो सीधा पॉइंट पे आओ",
+      "hyp_devanagari": "अब और झोल मत करो सीधा पोइन्त पे आओ",
+      "hyp_improved_formal": "अब और अनियमितता मत करो सीधा पोइन्त पे आओ।",
+      "ref_translation": "Stop beating around the bush and come straight to the point.",
+      "hyp_translation": "Translated: अब और झोल मत करो सीधा पोइन्त पे आओ",
+      "metrics": {
+        "CER": 0.1212,
+        "WER": 0.1111,
+        "Word_Accuracy": 88.89,
+        "BLEU": 0.0,
+        "chrF": 3.89
+      },
+      "notes": "Bambaiya / Hindi slang 'jhol'."
+    },
+    {
+      "id": 39,
+      "category": "Slang & SMS Abbreviations",
+      "input": "thx bro for ur help, kal treat meri taraf se",
+      "ref_devanagari": "थैंक्स ब्रो फॉर योर हेल्प, कल ट्रीट मेरी तरफ से",
+      "hyp_devanagari": "थैंक्स ब्रो फ़ोर उर हेल्प, कल त्रेअत मेरी तरफ़ से",
+      "hyp_improved_formal": "धन्यवाद ब्रो फ़ोर उर हेल्प, कल त्रेअत मेरी तरफ़ से।",
+      "ref_translation": "Thanks bro for your help, tomorrow's treat is on me.",
+      "hyp_translation": "Translated: थैंक्स ब्रो फ़ोर उर हेल्प, कल त्रेअत मेरी तरफ़ से",
+      "metrics": {
+        "CER": 0.1915,
+        "WER": 0.4,
+        "Word_Accuracy": 60.0,
+        "BLEU": 3.09,
+        "chrF": 4.5
+      },
+      "notes": "Heavily abbreviated texting chat."
+    },
+    {
+      "id": 40,
+      "category": "Slang & SMS Abbreviations",
+      "input": "kya scene h aaj sham ka?",
+      "ref_devanagari": "क्या सीन है आज शाम का?",
+      "hyp_devanagari": "क्या सीन है आज शाम क?",
+      "hyp_improved_formal": "क्या योजना है आज शाम क?",
+      "ref_translation": "What is the plan for this evening?",
+      "hyp_translation": "Translated: क्या सीन है आज शाम क?",
+      "metrics": {
+        "CER": 0.0455,
+        "WER": 0.1667,
+        "Word_Accuracy": 83.33,
+        "BLEU": 4.77,
+        "chrF": 7.26
+      },
+      "notes": "Slang: 'kya scene h' (what's the plan)."
+    },
+    {
+      "id": 41,
+      "category": "Numbers, Dates & Technical Codes",
+      "input": "aapka OTP 482910 hai, kisi se share mat kare",
+      "ref_devanagari": "आपका ओटीपी 482910 है, किसी से शेयर मत करें",
+      "hyp_devanagari": "आपका ओटीपी 482910 है, किसि से शरे मत करे",
+      "hyp_improved_formal": "आपका ओटीपी 482910 है, किसि से शरे मत करे।",
+      "ref_translation": "Your OTP is 482910, do not share it with anyone.",
+      "hyp_translation": "Translated: आपका ओटीपी 482910 है, किसि से शरे मत करे",
+      "metrics": {
+        "CER": 0.119,
+        "WER": 0.3333,
+        "Word_Accuracy": 66.67,
+        "BLEU": 4.03,
+        "chrF": 13.81
+      },
+      "notes": "Numeric security code preservation."
+    },
+    {
+      "id": 42,
+      "category": "Numbers, Dates & Technical Codes",
+      "input": "train number 12951 platform 4 par aayegi",
+      "ref_devanagari": "ट्रेन नंबर 12951 प्लेटफ़ॉर्म 4 पर आएगी",
+      "hyp_devanagari": "त्रइं नुम्बेर 12951 प्लत्फ़ोरं 4 पर आएगी",
+      "hyp_improved_formal": "त्रइं नुम्बेर 12951 प्लत्फ़ोरं 4 पर आएगी।",
+      "ref_translation": "Train number 12951 will arrive on platform 4.",
+      "hyp_translation": "Translated: त्रइं नुम्बेर 12951 प्लत्फ़ोरं 4 पर आएगी",
+      "metrics": {
+        "CER": 0.3158,
+        "WER": 0.4286,
+        "Word_Accuracy": 57.14,
+        "BLEU": 5.67,
+        "chrF": 13.01
+      },
+      "notes": "Alphanumeric transit announcement."
+    },
+    {
+      "id": 43,
+      "category": "Numbers, Dates & Technical Codes",
+      "input": "deadline 15th August 2026 tak extend ho gayi hai",
+      "ref_devanagari": "डेडलाइन 15 अगस्त 2026 तक एक्सटेंड हो गई है",
+      "hyp_devanagari": "देअद्लिने 15थ अउगुस्त 2026 तक एक्स्तेन्द हो गयि है",
+      "hyp_improved_formal": "देअद्लिने 15थ अउगुस्त 2026 तक एक्स्तेन्द हो गयि है।",
+      "ref_translation": "The deadline has been extended until 15th August 2026.",
+      "hyp_translation": "Translated: देअद्लिने 15थ अउगुस्त 2026 तक एक्स्तेन्द हो गयि है",
+      "metrics": {
+        "CER": 0.4048,
+        "WER": 0.5556,
+        "Word_Accuracy": 44.44,
+        "BLEU": 3.75,
+        "chrF": 8.54
+      },
+      "notes": "Ordinal dates with year."
+    },
+    {
+      "id": 44,
+      "category": "Numbers, Dates & Technical Codes",
+      "input": "mene usko 2500 rupees gpay kar diye",
+      "ref_devanagari": "मैंने उसको 2500 रुपए जीपे कर दिए",
+      "hyp_devanagari": "मेने उस्को 2500 रुपए जीपे कर दिये",
+      "hyp_improved_formal": "मेने उस्को 2500 रुपए जीपे कर दिये।",
+      "ref_translation": "I sent him 2500 rupees via GPay.",
+      "hyp_translation": "Translated: मेने उस्को 2500 रुपए जीपे कर दिये",
+      "metrics": {
+        "CER": 0.1562,
+        "WER": 0.4286,
+        "Word_Accuracy": 57.14,
+        "BLEU": 4.77,
+        "chrF": 10.2
+      },
+      "notes": "App name 'gpay' and monetary amounts."
+    },
+    {
+      "id": 45,
+      "category": "Numbers, Dates & Technical Codes",
+      "input": "error code 404 aa raha hai URL check karo",
+      "ref_devanagari": "एरर कोड 404 आ रहा है यूआरएल चेक करो",
+      "hyp_devanagari": "एर्रोर cओदे 404 आ रहा है यूआरएल चेcक करो",
+      "hyp_improved_formal": "एर्रोर cओदे 404 आ रहा है यूआरएल चेcक करो।",
+      "ref_translation": "Error code 404 is appearing, please check the URL.",
+      "hyp_translation": "Translated: एर्रोर cओदे 404 आ रहा है यूआरएल चेcक करो",
+      "metrics": {
+        "CER": 0.2286,
+        "WER": 0.3333,
+        "Word_Accuracy": 66.67,
+        "BLEU": 3.75,
+        "chrF": 6.75
+      },
+      "notes": "Standard HTTP error code and URL preservation."
+    }
+  ]
+}
