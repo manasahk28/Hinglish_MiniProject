@@ -69,6 +69,15 @@ Detailed notes regarding licensing, GPU/CPU coverage, and checkpoints are docume
 - **Phrasing Improvement**: **BharatGen Param1** (`bharatgenai/param1`) prompt engineering with few-shot in-context learning.
 - **Offline & CPU Suitability**: To ensure 100% reliability with zero API downtime, cold-start latency, or GPU constraints during grading, the system incorporates an embedded fast Aksharantar lexical engine and deterministic grammar refiner that runs in `<10ms` on any CPU.
 
+### 🔗 Official Starting Points & Reference Resources
+- **AI4Bharat IndicTrans2**: [https://github.com/AI4Bharat/IndicTrans2](https://github.com/AI4Bharat/IndicTrans2)
+- **AI4Bharat IndicConformer**: [https://github.com/AI4Bharat/IndicConformerASR](https://github.com/AI4Bharat/IndicConformerASR)
+- **AI4Bharat Indic Parler-TTS**: [https://huggingface.co/ai4bharat/indic-parler-tts](https://huggingface.co/ai4bharat/indic-parler-tts)
+- **BharatGen Organization**: [https://huggingface.co/bharatgenai](https://huggingface.co/bharatgenai)
+- **AI4Bharat Aksharantar**: [https://github.com/AI4Bharat/IndianNLP-Transliteration](https://github.com/AI4Bharat/IndianNLP-Transliteration)
+
+> **Implementation Note**: Specific checkpoint availability, licensing (MIT / CC-BY 4.0), language coverage (22 scheduled Indian languages), GPU requirements (2GB–16GB VRAM vs CPU execution), and domain suitability are verified and benchmarked in [docs/model_dataset_notes.md](docs/model_dataset_notes.md).
+
 ---
 
 ## 📊 4. Quantitative Testing & Error Analysis
@@ -204,3 +213,4 @@ Hinglish_MiniProject/
 | **GenAI / Agentic Integration** | Multi-step agent (`src/agent/writing_assistant.py`) integrating code-switch classification, 4-tone few-shot prompt engineering, and quality critic. |
 | **Quantitative Testing & Error Analysis** | 45 test cases (`data/test_cases.json`), CER/WER/BLEU metrics runner (`src/evaluation/evaluator.py`), and 4-page failure analysis (`docs/failure_analysis.md`). |
 | **Demo, Documentation & Repository** | Complete README, clean modular architecture, and unit test suite passing 100%. |
+
