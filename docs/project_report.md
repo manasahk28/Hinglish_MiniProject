@@ -227,3 +227,4 @@ The project is organized cleanly with all code, tests, documentation, and data c
 - `docs/model_dataset_notes.md`: Model specifications, licenses, and hardware notes.
 - `tests/`: Automated unit tests.
 - `README.md`: Complete quickstart and documentation.
+
